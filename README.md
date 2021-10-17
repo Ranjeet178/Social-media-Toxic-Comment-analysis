@@ -22,11 +22,11 @@ The motivation is to develope muti-lable and muti-level NLP application with hel
 
 ## Technical Aspect
 This project is divided into two part:
-1. Developing a flask app which will be connected to AWS services like lambda and EC2.
-2. Deploying the entire application in google app engine.
-    - The user has to specify the number of shots, number of resources.
-    - Based on the user input it will call the services to calculate the pi-values.
-    - After the values has been retrun from AWS to the flask a graph can be seen with the set of pi values and a history which shows the all transcations.
+1. Training a machine learning model and then saving the model.
+2. Developing a flask app and uplaoding the saved machine learning model.
+    - The user has to specify Comment form the UI.
+    - Based on the user input it will return the category or toxicity of the comment.
+    
 
 ## Installation
 The Code is written in Python 3.7. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
